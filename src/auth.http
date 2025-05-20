@@ -1,0 +1,20 @@
+### Criar um novo aluno (se ainda não existe)
+POST http://localhost:8080/usuario
+Content-Type: application/json
+
+{
+  "nome": "João da Silva",
+  "email": "joao@emaiul.com",
+  "senha": "123456"
+}
+
+###
+
+### Autenticar e gerar token JWT
+POST http://localhost:8080/auth
+Content-Type: application/json
+
+{
+  "email": "admin",
+  "senha": "admin"
+}
